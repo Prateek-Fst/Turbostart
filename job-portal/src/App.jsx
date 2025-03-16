@@ -8,7 +8,7 @@ import JobDetails from './pages/JobDetails';
 import Apply from './pages/Apply';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
-import Navbar from './components/Navbar';
+import Navbar from './components/NavBar';
 import '@ionic/react/css/core.css';
 import '@ionic/react/css/normalize.css';
 import '@ionic/react/css/structure.css';
