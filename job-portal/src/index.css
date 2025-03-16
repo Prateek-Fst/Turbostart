@@ -1,1 +1,4 @@
 @import "tailwindcss";
+.content-with-offset {
+    --padding-top: 60px;
+  }

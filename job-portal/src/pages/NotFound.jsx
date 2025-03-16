@@ -1,21 +1,23 @@
+import { IonPage, IonContent, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonButton } from '@ionic/react';
+import { Link } from 'react-router-dom';
+
 const NotFound = () => {
-    return (
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4">
-        <div className="text-center bg-white p-8 rounded-xl shadow-md">
-          <h2 className="text-4xl font-extrabold text-red-600 mb-4">404</h2>
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">Page Not Found</h3>
-          <p className="text-gray-600 max-w-md">
-            Oops! The page you're looking for doesn't exist or has been moved.
-          </p>
-          <Link 
-            to="/" 
-            className="mt-6 inline-block bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-all duration-300"
-          >
-            Back to Home
-          </Link>
-        </div>
-      </div>
-    );
-  };
-  
-  export default NotFound;
+  return (
+    <IonPage>
+      <IonContent fullscreen className="ion-text-center">
+        <IonCard>
+          <IonCardHeader>
+            <IonCardTitle color="danger">404</IonCardTitle>
+          </IonCardHeader>
+          <IonCardContent>
+            <h3>Page Not Found</h3>
+            <p>Oops! The page you're looking for doesn't exist or has been moved.</p>
+            <IonButton routerLink="/">Back to Home</IonButton>
+          </IonCardContent>
+        </IonCard>
+      </IonContent>
+    </IonPage>
+  );
+};
+
+export default NotFound;
